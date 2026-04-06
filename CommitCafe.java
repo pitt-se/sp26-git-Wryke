@@ -5,8 +5,9 @@ public class CommitCafe {
     private static int cups = 0;
 
     public static void brew(String drink) {
-        cups = cups++;
-        System.out.println("1 more " + drink + " coming up!");
+        cups++;
+        System.out.println("One " + drink + " coming up!");
+        System.out.println("[BOT CHECK] drink length = " + drink.length() + "\n");
     }
 
     public static void printSummary() {
